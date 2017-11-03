@@ -288,3 +288,125 @@ tr{
     border-right: none;
     border-left: none;
 }
+
+
+
+
+
+/*****************************************************************
+ *                                                               *
+ * Buttons and alert                                             *
+ *                                                               *
+ *****************************************************************/
+
+.btn{
+    font-size: 15px;
+    padding: 40px 80px;
+    text-align: center;
+    margin: 10px 5px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 5px 5px 0px #bdbdbd;
+}
+
+.btn:hover{
+    background-color: #4fbfff;
+    box-shadow: none;
+}
+
+.btn:active{
+    transform: translateY(5px);
+}
+
+.btnSmall{
+    font-size: 10px;
+    padding: 25px 50px;
+}
+
+.btnLarge{
+    font-size: 30px;
+    padding:75px 120px;
+}
+
+.btnRed{
+    background-color: red;
+}
+
+.btnRed:hover{
+    background-color: #ff624a;
+}
+
+.btnYellow{
+    background-color: #ffe700;
+    color: black;
+}
+
+.btnYellow:hover{
+    background-color: yellow;
+}
+
+.btnGreen{
+    background-color: green;
+}
+
+.btnGreen:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+.btnFlat{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.btnFlat:hover{
+    background-color: darkslategrey;
+}
+
+.btnFlat:active{
+    transform: translateY(2px);
+}
+
+.btnExtraLarge{
+    width: 98%;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.btnFancy{
+    background: linear-gradient(to top right, blue, green, yellow, red);
+}
+
+.alertInfo, .alertSuccess, .alertWarning, .alertDang{
+    width: 95%;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    height:35px;
+    border:solid;
+    margin: 10px 5px;
+    padding: 15px;
+}
+
+.alertInfo{
+    background-color: yellow;
+}
+
+.alertSuccess{
+    background-color: green;
+}
+
+.alertWarning{
+    background-color: orange;
+}
+
+.alertDang{
+    background-color: red;
+}
