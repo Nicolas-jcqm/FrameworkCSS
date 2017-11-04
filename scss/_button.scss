@@ -1,24 +1,30 @@
+$backgdColorButton: #1E90FF;
+
+$backgdColorButtonRed: #FF0000;
+$backgdColorButtonYellow: #ffe700;
+$backgdColorButtonGreen: #008000;
+
+$translateButtonClic: 5px;
+
 .btn{
   font-size: 15px;
   padding: 40px 80px;
   text-align: center;
   margin: 10px 5px;
-  background-color: dodgerblue;
+  background-color: $backgdColorButton;
   color: white;
   border-radius: 20px;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   box-shadow: 5px 5px 0 #bdbdbd;
-}
-
-.btn:hover{
-  background-color: #4fbfff;
-  box-shadow: none;
-}
-
-.btn:active{
-  transform: translateY(5px);
+  &:hover{
+    background-color: lighten($backgdColorButton,10);
+    box-shadow: none;
+  }
+  &:active{
+    transform: translateY($translateButtonClic);
+  }
 }
 
 .btnSmall{
@@ -32,29 +38,26 @@
 }
 
 .btnRed{
-  background-color: red;
-}
-
-.btnRed:hover{
-  background-color: #ff624a;
+  background-color: $backgdColorButtonRed;
+  &:hover{
+    background-color: lighten($backgdColorButtonRed,20);
+  }
 }
 
 .btnYellow{
-  background-color: #ffe700;
+  background-color: $backgdColorButtonYellow;
   color: black;
-}
-
-.btnYellow:hover{
-  background-color: yellow;
+  &:hover{
+    background-color: lighten($backgdColorButtonYellow,20);
+  }
 }
 
 .btnGreen{
-  background-color: green;
-}
-
-.btnGreen:hover{
-  background-color: greenyellow;
-  color: black;
+  background-color: $backgdColorButtonGreen;
+  &:hover{
+    background-color: lighten($backgdColorButtonGreen,20);
+    color: black;
+  }
 }
 
 .btnFlat{
@@ -62,14 +65,12 @@
   color: white;
   border-radius: 0;
   box-shadow: none;
-}
-
-.btnFlat:hover{
-  background-color: darkslategrey;
-}
-
-.btnFlat:active{
-  transform: translateY(2px);
+  &:hover{
+    background-color: darkslategrey;
+  }
+  &:active{
+    transform: translateY($translateButtonClic/2);
+  }
 }
 
 .btnExtraLarge{

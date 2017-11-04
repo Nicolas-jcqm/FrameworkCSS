@@ -1,15 +1,37 @@
-.navbar, .breadcrumb, .pagination{
+$backgdNav: black;
+$colorBreadText: white;
+$separatorBread : "\002F";
+$colorPagination: #2f4bff;
+
+.menuNav{
   list-style: none;
   display: flex;
 }
 
 .navbar{
+  @extend .menuNav;
   height: 50px;
   margin:0 0 40px 0;
   padding: 0;
+  @media (max-width:650px){
+    display: inline-block;
+    width : 100%;
+  }
+  li{
+    @extend .menuNavElem;
+    @media (max-width:650px) {
+      width: 98%;
+      padding-top: 20px;
+      height: 40px;
+    }
+    &:hover{
+      background-color: lighten($backgdNav,40);
+      color:white;
+    }
+  }
 }
 
-.navbar li, .pagination li {
+.menuNavElem{
   border : solid white 1px;
   text-align:center;
   padding-top:10px;
@@ -17,64 +39,51 @@
   min-width: 20px;
 }
 
-.navbar li:hover, .pagination li:hover{
-  background-color: darkslategrey;
-  color:white;
-}
-
-@media (max-width:650px){
-  .navbar{
-    display: inline-block;
-    width : 100%;
-  }
-  .navbar li{
-    width:98%;
-    padding-top: 20px;
-    height:40px;
-  }
-}
-
 .disabled{
   color:white;
-  background-color:black;
+  background-color:$backgdNav;
 }
 
 .active{
   color: black;
-  background-color: white;
+  background-color: lighten($backgdNav,100);
 }
 
 .breadcrumb{
-  background-color: #000000;
+  @extend .menuNav;
+  background-color: $backgdNav;
   padding: 10px;
   color: #1e6ed9;
-}
-
-.breadcrumb li a{
-  color: white;
-  text-decoration: none;
-}
-
-.breadcrumb li{
-  margin-left: 15px;
-}
-
-.breadcrumb li+li:before{
-  content: "\002F";
-  color:white;
-  padding-right: 10px;
-}
-
-.breadcrumb li:hover{
-  text-decoration: underline;
+  li{
+    margin-left: 15px;
+    &:hover{
+      text-decoration: underline;
+    }
+    a{
+      color: $colorBreadText;
+      text-decoration: none;
+    }
+  }
+  li+li:before{
+    content: $separatorBread;
+    color:white;
+    padding-right: 10px;
+  }
 }
 
 .pagination{
+  @extend .menuNav;
   height: 50px;
   margin:40px 40%;
-}
-
-.pagination a {
-  text-decoration: none;
-  color: #2f4bff;
+  a{
+    text-decoration: none;
+    color: $colorPagination;
+  }
+  li{
+    @extend .menuNavElem;
+    &:hover{
+      background-color: lighten($backgdNav,40);
+      color:white;
+    }
+  }
 }
