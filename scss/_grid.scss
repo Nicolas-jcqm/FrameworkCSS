@@ -1,0 +1,10 @@
+$widthGrid: 90% !default;
+
+.container{
+  width : $widthGrid;
+}
+
+.row{
+  display: flex;
+}
+

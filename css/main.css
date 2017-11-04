@@ -434,4 +434,10 @@ tr {
     background-color: #666666;
     color: white; }
 
+.container {
+  width: 90%; }
+
+.row {
+  display: flex; }
+
 /*# sourceMappingURL=main.css.map */
