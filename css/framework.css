@@ -422,19 +422,23 @@ tr{
  *                                                               *
  *****************************************************************/
 
-.navbar{
+.navbar, .breadcrumb, .pagination{
     list-style: none;
     display: flex;
+}
+
+.navbar{
     height: 50px;
     margin:0 0 40px 0;
     padding: 0;
 }
 
-.navbar li {
+.navbar li, .pagination li {
     border : solid white 1px;
     text-align:center;
     padding-top:10px;
     width: 20%;
+    min-width: 20px;
 }
 
 .navbar li:hover, .pagination li:hover{
@@ -465,9 +469,7 @@ tr{
 }
 
 .breadcrumb{
-    display: flex;
     background-color: #000000;
-    list-style: none;
     padding: 10px;
     color: #1e6ed9;
 }
@@ -492,18 +494,8 @@ tr{
 }
 
 .pagination{
-    list-style: none;
-    display: flex;
     height: 50px;
     margin:40px 40%;
-}
-
-.pagination li {
-    border : solid white 1px;
-    text-align:center;
-    padding-top:10px;
-    width: 20%;
-    min-width: 20px;
 }
 
 .pagination a {
