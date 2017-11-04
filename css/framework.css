@@ -122,6 +122,7 @@ h6 + .subTl{ font-size: 0.8rem; }
 
 p{
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 mark{
@@ -236,7 +237,7 @@ kbd{
     border: solid black 2px;
     padding: 4px;
     font-size: 12px;
-    margin: 0px 5px;
+    margin: 0 5px;
 
 }
 
@@ -310,7 +311,7 @@ tr{
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
-    box-shadow: 5px 5px 0px #bdbdbd;
+    box-shadow: 5px 5px 0 #bdbdbd;
 }
 
 .btn:hover{
@@ -361,7 +362,7 @@ tr{
 .btnFlat{
     background-color: black;
     color: white;
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: none;
 }
 
@@ -409,4 +410,103 @@ tr{
 
 .alertDang{
     background-color: red;
+}
+
+
+
+
+
+/*****************************************************************
+ *                                                               *
+ * Menu                                                          *
+ *                                                               *
+ *****************************************************************/
+
+.navbar{
+    list-style: none;
+    display: flex;
+    height: 50px;
+    margin:0 0 40px 0;
+    padding: 0;
+}
+
+.navbar li {
+    border : solid white 1px;
+    text-align:center;
+    padding-top:10px;
+    width: 20%;
+}
+
+.navbar li:hover, .pagination li:hover{
+    background-color: darkslategrey;
+    color:white;
+}
+
+@media (max-width:650px){
+    .navbar{
+        display: inline-block;
+        width : 100%;
+    }
+    .navbar li{
+        width:98%;
+        padding-top: 20px;
+        height:40px;
+    }
+}
+
+.disabled{
+    color:white;
+    background-color:black;
+}
+
+.active{
+    color: black;
+    background-color: white;
+}
+
+.breadcrumb{
+    display: flex;
+    background-color: #000000;
+    list-style: none;
+    padding: 10px;
+    color: #1e6ed9;
+}
+
+.breadcrumb li a{
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb li{
+    margin-left: 15px;
+}
+
+.breadcrumb li+li:before{
+    content: "\002F";
+    color:white;
+    padding-right: 10px;
+}
+
+.breadcrumb li:hover{
+    text-decoration: underline;
+}
+
+.pagination{
+    list-style: none;
+    display: flex;
+    height: 50px;
+    margin:40px 40%;
+}
+
+.pagination li {
+    border : solid white 1px;
+    text-align:center;
+    padding-top:10px;
+    width: 20%;
+    min-width: 20px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #2f4bff;
 }
