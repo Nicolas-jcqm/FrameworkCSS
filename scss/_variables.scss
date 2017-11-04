@@ -1,0 +1,48 @@
+/**
+ * Alerts
+ */
+
+$colorInfo: yellow;
+$colorSuccess: green;
+$colorWarn: orange;
+$colorDang: red;
+
+$alertHeight: 35px !default;
+
+/**
+ * Boards
+ */
+
+$titleBoardColor: dodgerblue;
+$alternateBoardColor: red;
+$hoverBoardColor: gray;
+
+/**
+ * Buttons
+ */
+
+$backgdColorButton: #1E90FF !default;
+
+$backgdColorButtonRed: #FF0000;
+$backgdColorButtonYellow: #ffe700;
+$backgdColorButtonGreen: #008000;
+
+$translateButtonClic: 5px;
+
+/**
+ * NavBar
+ */
+
+$backgdNav: black;
+$colorBreadText: white;
+$separatorBread : "\002F";
+$colorPagination: #2f4bff;
+
+/**
+ * Typo
+ */
+
+$fontSize: 17px;
+$fontSizeSubT: 0.4em;
+$beforeQuotes: "\201C";
+$afterQuotes: "\201D";

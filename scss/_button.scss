@@ -1,11 +1,3 @@
-$backgdColorButton: #1E90FF !default;
-
-$backgdColorButtonRed: #FF0000;
-$backgdColorButtonYellow: #ffe700;
-$backgdColorButtonGreen: #008000;
-
-$translateButtonClic: 5px;
-
 @mixin button($col, $brdRadius, $pddng,$backColor:$backgdColorButton){
   background-color: $backColor;
   color: $col;
