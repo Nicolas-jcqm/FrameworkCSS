@@ -3,13 +3,13 @@ $colorBreadText: white;
 $separatorBread : "\002F";
 $colorPagination: #2f4bff;
 
-.menuNav{
+%menuNav{
   list-style: none;
   display: flex;
 }
 
 .navbar{
-  @extend .menuNav;
+  @extend %menuNav;
   height: 50px;
   margin:0 0 40px 0;
   padding: 0;
@@ -18,7 +18,7 @@ $colorPagination: #2f4bff;
     width : 100%;
   }
   li{
-    @extend .menuNavElem;
+    @extend %menuNavElem;
     @media (max-width:650px) {
       width: 98%;
       padding-top: 20px;
@@ -31,7 +31,7 @@ $colorPagination: #2f4bff;
   }
 }
 
-.menuNavElem{
+%menuNavElem{
   border : solid white 1px;
   text-align:center;
   padding-top:10px;
@@ -50,7 +50,7 @@ $colorPagination: #2f4bff;
 }
 
 .breadcrumb{
-  @extend .menuNav;
+  @extend %menuNav;
   background-color: $backgdNav;
   padding: 10px;
   color: #1e6ed9;
@@ -72,7 +72,7 @@ $colorPagination: #2f4bff;
 }
 
 .pagination{
-  @extend .menuNav;
+  @extend %menuNav;
   height: 50px;
   margin:40px 40%;
   a{
@@ -80,7 +80,7 @@ $colorPagination: #2f4bff;
     color: $colorPagination;
   }
   li{
-    @extend .menuNavElem;
+    @extend %menuNavElem;
     &:hover{
       background-color: lighten($backgdNav,40);
       color:white;

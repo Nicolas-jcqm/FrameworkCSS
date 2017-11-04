@@ -9,32 +9,32 @@ table{
   text-align: center;
 }
 
-.brd{
+%brd{
   border: 2px solid black;
 }
 
-.brdTop{
+%brdTop{
   border-top: none;
 }
 
-.brdBot{
+%brdBot{
   border-bottom: none;
 }
 
-.brdSide{
+%brdSide{
   border-right: none;
   border-left: none;
 }
 
 th{
-  @extend .brd;
+  @extend %brd;
   padding:10px;
   background-color: $titleBoardColor;
   font-size: 18px;
 }
 
 td{
-  @extend .brd;
+  @extend %brd;
   padding:10px;
   font-size: 16px;
 }
@@ -54,20 +54,20 @@ tr{
 }
 
 .notCompleteTable{
-  @extend .brdTop;
-  @extend .brdBot;
-  @extend .brdSide;
+  @extend %brdTop;
+  @extend %brdBot;
+  @extend %brdSide;
   &>td{
-    @extend .brdSide;
-    @extend .brdBot;
+    @extend %brdSide;
+    @extend %brdBot;
   }
   &>tr{
-    @extend .brdSide;
-    @extend .brdBot;
-    @extend .brdTop;
+    @extend %brdSide;
+    @extend %brdBot;
+    @extend %brdTop;
   }
   &>th{
-    @extend .brdSide;
-    @extend .brdTop;
+    @extend %brdSide;
+    @extend %brdTop;
   }
 }

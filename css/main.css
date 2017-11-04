@@ -70,7 +70,7 @@ p {
 mark {
   background-color: yellow; }
 
-.add, del, ins {
+del, ins {
   font-style: italic; }
 
 del {
@@ -123,11 +123,11 @@ ul {
 .ulWithoutDeco {
   list-style: none; }
 
-.symbolAroundSize, blockquote:before, blockquote:after {
+blockquote:before, blockquote:after {
   font-size: 20px;
   vertical-align: -6px; }
 
-.quotes, blockquote, code, pre {
+blockquote, code, pre {
   font-size: 15px;
   margin: 10px 50px; }
 
@@ -161,16 +161,16 @@ table {
   width: 90%;
   text-align: center; }
 
-.brd, th, td {
+th, td {
   border: 2px solid black; }
 
-.brdTop, .notCompleteTable, .notCompleteTable > tr, .notCompleteTable > th {
+.notCompleteTable, .notCompleteTable > tr, .notCompleteTable > th {
   border-top: none; }
 
-.brdBot, .notCompleteTable, .notCompleteTable > td, .notCompleteTable > tr {
+.notCompleteTable, .notCompleteTable > td, .notCompleteTable > tr {
   border-bottom: none; }
 
-.brdSide, .notCompleteTable, .notCompleteTable > td, .notCompleteTable > tr, .notCompleteTable > th {
+.notCompleteTable, .notCompleteTable > td, .notCompleteTable > tr, .notCompleteTable > th {
   border-right: none;
   border-left: none; }
 
@@ -278,7 +278,7 @@ tr {
 .alertDang {
   background-color: red; }
 
-.menuNav, .navbar, .breadcrumb, .pagination {
+.navbar, .breadcrumb, .pagination {
   list-style: none;
   display: flex; }
 
@@ -299,7 +299,7 @@ tr {
     background-color: #666666;
     color: white; }
 
-.menuNavElem, .navbar li, .pagination li {
+.navbar li, .pagination li {
   border: solid white 1px;
   text-align: center;
   padding-top: 10px;
