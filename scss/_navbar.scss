@@ -1,0 +1,80 @@
+.navbar, .breadcrumb, .pagination{
+  list-style: none;
+  display: flex;
+}
+
+.navbar{
+  height: 50px;
+  margin:0 0 40px 0;
+  padding: 0;
+}
+
+.navbar li, .pagination li {
+  border : solid white 1px;
+  text-align:center;
+  padding-top:10px;
+  width: 20%;
+  min-width: 20px;
+}
+
+.navbar li:hover, .pagination li:hover{
+  background-color: darkslategrey;
+  color:white;
+}
+
+@media (max-width:650px){
+  .navbar{
+    display: inline-block;
+    width : 100%;
+  }
+  .navbar li{
+    width:98%;
+    padding-top: 20px;
+    height:40px;
+  }
+}
+
+.disabled{
+  color:white;
+  background-color:black;
+}
+
+.active{
+  color: black;
+  background-color: white;
+}
+
+.breadcrumb{
+  background-color: #000000;
+  padding: 10px;
+  color: #1e6ed9;
+}
+
+.breadcrumb li a{
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb li{
+  margin-left: 15px;
+}
+
+.breadcrumb li+li:before{
+  content: "\002F";
+  color:white;
+  padding-right: 10px;
+}
+
+.breadcrumb li:hover{
+  text-decoration: underline;
+}
+
+.pagination{
+  height: 50px;
+  margin:40px 40%;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #2f4bff;
+}

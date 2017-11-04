@@ -1,0 +1,26 @@
+.alertInfo, .alertSuccess, .alertWarning, .alertDang{
+  width: 95%;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  height:35px;
+  border:solid;
+  margin: 10px 5px;
+  padding: 15px;
+}
+
+.alertInfo{
+  background-color: yellow;
+}
+
+.alertSuccess{
+  background-color: green;
+}
+
+.alertWarning{
+  background-color: orange;
+}
+
+.alertDang{
+  background-color: red;
+}
