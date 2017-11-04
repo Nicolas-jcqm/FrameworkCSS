@@ -1,4 +1,4 @@
-$backgdColorButton: #1E90FF;
+$backgdColorButton: #1E90FF !default;
 
 $backgdColorButtonRed: #FF0000;
 $backgdColorButtonYellow: #ffe700;
@@ -6,21 +6,23 @@ $backgdColorButtonGreen: #008000;
 
 $translateButtonClic: 5px;
 
+@mixin button($col, $brdRadius, $pddng,$backColor:$backgdColorButton){
+  background-color: $backColor;
+  color: $col;
+  border-radius: $brdRadius;
+  padding: $pddng;
+}
+
 .btn{
+  @include button(white, 20px, 40px 80px);
   font-size: 15px;
-  padding: 40px 80px;
   text-align: center;
   margin: 10px 5px;
-  background-color: $backgdColorButton;
-  color: white;
-  border-radius: 20px;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  box-shadow: 5px 5px 0 #bdbdbd;
   &:hover{
     background-color: lighten($backgdColorButton,10);
-    box-shadow: none;
   }
   &:active{
     transform: translateY($translateButtonClic);
@@ -28,24 +30,24 @@ $translateButtonClic: 5px;
 }
 
 .btnSmall{
+  @include button(white, 20px, 25px 50px);
   font-size: 10px;
-  padding: 25px 50px;
 }
 
 .btnLarge{
+  @include button(white, 20px, 75px 120px);
   font-size: 30px;
-  padding:75px 120px;
 }
 
 .btnRed{
-  background-color: $backgdColorButtonRed;
+  @include button(white, 20px, 40px 80px, $backgdColorButtonRed);
   &:hover{
     background-color: lighten($backgdColorButtonRed,20);
   }
 }
 
 .btnYellow{
-  background-color: $backgdColorButtonYellow;
+  @include button(white, 20px, 40px 80px,$backgdColorButtonYellow);
   color: black;
   &:hover{
     background-color: lighten($backgdColorButtonYellow,20);
@@ -53,7 +55,7 @@ $translateButtonClic: 5px;
 }
 
 .btnGreen{
-  background-color: $backgdColorButtonGreen;
+  @include button(white, 20px, 40px 80px,$backgdColorButtonGreen);
   &:hover{
     background-color: lighten($backgdColorButtonGreen,20);
     color: black;
@@ -61,9 +63,7 @@ $translateButtonClic: 5px;
 }
 
 .btnFlat{
-  background-color: black;
-  color: white;
-  border-radius: 0;
+  @include button(white, 0, 40px 80px, black);
   box-shadow: none;
   &:hover{
     background-color: darkslategrey;
@@ -74,6 +74,7 @@ $translateButtonClic: 5px;
 }
 
 .btnExtraLarge{
+  @include button(white, 20px, 75px 120px);
   width: 98%;
   font-size: 20px;
   font-weight: bold;
@@ -81,5 +82,13 @@ $translateButtonClic: 5px;
 }
 
 .btnFancy{
+  @include button(white, 20px, 40px 80px);
   background: linear-gradient(to top right, blue, green, yellow, red);
+  box-shadow: 5px 5px 0 #bdbdbd;
+  &:hover{
+    background: linear-gradient(to top right, rgba(0,0,255,0.7), rgba(0,128,0,0.7), rgba(255,255,0,0.7), rgba(255,0,0,0.7));
+  }
+  &:active{
+    box-shadow: none;
+  }
 }

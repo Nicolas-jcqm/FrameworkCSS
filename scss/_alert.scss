@@ -3,35 +3,39 @@ $colorSuccess: green;
 $colorWarn: orange;
 $colorDang: red;
 
-$alertHeight: 35px;
+$alertHeight: 35px !default;
 
 .alert{
   width: 95%;
   font-size: 20px;
   font-weight: bolder;
   text-align: left;
-  height:$alertHeight;
   border:solid;
   margin: 10px 5px;
   padding: 15px;
 }
 
+@mixin alert($backgdColor, $height:$alertHeight){
+  background-color: $backgdColor;
+  height:$height
+}
+
 .alertInfo{
   @extend .alert;
-  background-color: $colorInfo;
+  @include alert($colorInfo);
 }
 
 .alertSuccess{
   @extend .alert;
-  background-color: $colorSuccess;
+  @include alert($colorSuccess);
 }
 
 .alertWarning{
   @extend .alert;
-  background-color: $colorWarn;
+  @include alert($colorWarn);
 }
 
 .alertDang{
   @extend .alert;
-  background-color: $colorDang;
+  @include alert($colorDang, 40px);
 }

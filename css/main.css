@@ -195,44 +195,57 @@ tr {
   font-size: 17px; }
 
 .btn {
-  font-size: 15px;
-  padding: 40px 80px;
-  text-align: center;
-  margin: 10px 5px;
   background-color: #1E90FF;
   color: white;
   border-radius: 20px;
+  padding: 40px 80px;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 5px;
   cursor: pointer;
   display: inline-block;
-  text-decoration: none;
-  box-shadow: 5px 5px 0 #bdbdbd; }
+  text-decoration: none; }
   .btn:hover {
-    background-color: #51a9ff;
-    box-shadow: none; }
+    background-color: #51a9ff; }
   .btn:active {
     transform: translateY(5px); }
 
 .btnSmall {
-  font-size: 10px;
-  padding: 25px 50px; }
+  background-color: #1E90FF;
+  color: white;
+  border-radius: 20px;
+  padding: 25px 50px;
+  font-size: 10px; }
 
 .btnLarge {
-  font-size: 30px;
-  padding: 75px 120px; }
+  background-color: #1E90FF;
+  color: white;
+  border-radius: 20px;
+  padding: 75px 120px;
+  font-size: 30px; }
 
 .btnRed {
-  background-color: #FF0000; }
+  background-color: #FF0000;
+  color: white;
+  border-radius: 20px;
+  padding: 40px 80px; }
   .btnRed:hover {
     background-color: #ff6666; }
 
 .btnYellow {
   background-color: #ffe700;
+  color: white;
+  border-radius: 20px;
+  padding: 40px 80px;
   color: black; }
   .btnYellow:hover {
     background-color: #fff166; }
 
 .btnGreen {
-  background-color: #008000; }
+  background-color: #008000;
+  color: white;
+  border-radius: 20px;
+  padding: 40px 80px; }
   .btnGreen:hover {
     background-color: #00e600;
     color: black; }
@@ -241,6 +254,7 @@ tr {
   background-color: black;
   color: white;
   border-radius: 0;
+  padding: 40px 80px;
   box-shadow: none; }
   .btnFlat:hover {
     background-color: darkslategrey; }
@@ -248,35 +262,51 @@ tr {
     transform: translateY(2.5px); }
 
 .btnExtraLarge {
+  background-color: #1E90FF;
+  color: white;
+  border-radius: 20px;
+  padding: 75px 120px;
   width: 98%;
   font-size: 20px;
   font-weight: bold;
   display: block; }
 
 .btnFancy {
-  background: linear-gradient(to top right, blue, green, yellow, red); }
+  background-color: #1E90FF;
+  color: white;
+  border-radius: 20px;
+  padding: 40px 80px;
+  background: linear-gradient(to top right, blue, green, yellow, red);
+  box-shadow: 5px 5px 0 #bdbdbd; }
+  .btnFancy:hover {
+    background: linear-gradient(to top right, rgba(0, 0, 255, 0.7), rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.7), rgba(255, 0, 0, 0.7)); }
+  .btnFancy:active {
+    box-shadow: none; }
 
 .alert, .alertInfo, .alertSuccess, .alertWarning, .alertDang {
   width: 95%;
   font-size: 20px;
   font-weight: bolder;
   text-align: left;
-  height: 35px;
   border: solid;
   margin: 10px 5px;
   padding: 15px; }
 
 .alertInfo {
-  background-color: yellow; }
+  background-color: yellow;
+  height: 35px; }
 
 .alertSuccess {
-  background-color: green; }
+  background-color: green;
+  height: 35px; }
 
 .alertWarning {
-  background-color: orange; }
+  background-color: orange;
+  height: 35px; }
 
 .alertDang {
-  background-color: red; }
+  background-color: red;
+  height: 40px; }
 
 .navbar, .breadcrumb, .pagination {
   list-style: none;
