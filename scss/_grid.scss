@@ -1,10 +1,43 @@
-$widthGrid: 90% !default;
+@mixin columns($colmn, $wdth:$width, $mrg:$margin) {
+  @for $i from 1 to $colmn + 1{
+    .g#{$colmn}-col#{$i}{
+      width: $i / $colmn * $wdth - 2 * $mrg;
+      border: solid black 2px;
+      margin: $mrg;
+      padding:5px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@mixin offsets($colmn, $wdth:$width) {
+  @for $i from 1 to $colmn + 1 {
+    .g#{$colmn}-offs#{$i} {
+      margin-left: $i / $colmn * $wdth + $margin;
+      border: solid black 2px;
+      box-sizing: border-box;
+    }
+  }
+}
 
 .container{
-  width : $widthGrid;
+  background-color: gray;
+  width: 99%;
+  margin: auto;
 }
 
-.row{
+%row{
   display: flex;
+  flex-wrap: nowrap;
 }
 
+.row-12{
+  @extend %row;
+  @include columns(12);
+  @include offsets(12);
+}
+
+.row-20{
+  @extend %row;
+  @include columns(20);
+}

@@ -53,16 +53,16 @@ tr{
   @extend %brdTop;
   @extend %brdBot;
   @extend %brdSide;
-  &>td{
+  td{
     @extend %brdSide;
     @extend %brdBot;
   }
-  &>tr{
+  tr{
     @extend %brdSide;
     @extend %brdBot;
     @extend %brdTop;
   }
-  &>th{
+  th{
     @extend %brdSide;
     @extend %brdTop;
   }

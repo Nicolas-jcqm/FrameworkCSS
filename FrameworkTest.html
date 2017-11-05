@@ -77,7 +77,9 @@
 
         <hr>
 
-       <blockquote>His name was Gaal Dornick and he was just a country boy who had never seen Trantor before. That is, not in real life. He had seen it many times on the hyper-video,
+        <p>Citation : </p>
+
+        <blockquote>His name was Gaal Dornick and he was just a country boy who had never seen Trantor before. That is, not in real life. He had seen it many times on the hyper-video,
             and occasionally in tremendous three-dimensional newscasts covering an Imperial Coronation or the opening of a Galactic Council. Even though he had lived all his life on the world of Synnax,
             which circled a star at the edges of the Blue Drift, he was not cut off from civilization, you see. At that time, no place in the Galaxy was. <br> There were nearly twenty-five million
             inhabited planets in the Galaxy then, and not one but owed allegiance to the Empire whose seat was on Trantor. It was the last half-century in which that could be said. <br>To Gaal, this trip was
@@ -85,8 +87,11 @@
             Synnax's only satellite in order to get the data on the mechanics of meteor driftage which he needed for his dissertation, but space-travel was all one whether one travelled half a million miles,
             or as many light years. <cite>Foundation, Isaac Asimov. 1951</cite> </blockquote>
 
+        <p>Extrait de code : </p>
+
         <code> func main() { fmt.Println("hello world") } </code>
 
+        <p>Balise pre, respecte le texte tel qu'il est inséré dans le fichier .html (espaces , tabulation, ...) : </p>
         <pre>Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, sed        do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. </pre>
@@ -211,6 +216,9 @@
 
         <hr>
 
+        <p>Différents boutons <br> Un premier de taille et de couleur par défaut, <br>
+        puis de petite et grande taille, suivis de boutons de couleurs différentes. Il est possible d'associer les
+        classes pour créer un bouton particulier</p>
         <button class = "btn">Button button</button>
         <a href="" class="btn">Button a</a>
 
@@ -239,7 +247,7 @@
         <div class="alertDang">Danger /!\</div>
 
         <hr>
-
+        <p>Menu de navigation : </p>
         <ul class = "navbar">
             <li class="disabled">Choice1</li>
             <li class="disabled">Choice2</li>
@@ -248,14 +256,18 @@
             <li class ="disabled">Choice5</li>
         </ul>
 
+        <br><br><p>Menu de pagination : </p>
+
         <ul class ="pagination">
-            <li class="disabled"><a href=""><</a></li>
+            <li class="disabled"><a href=""> &#8249; &#8249; </a></li>
             <li class="disabled"><a href="">1</a></li>
             <li class="disabled"><a href="">2</a></li>
             <li class ="active"><a href="">3</a></li>
             <li class ="disabled"><a href="">4</a></li>
-            <li class="disabled"><a href="">></a></li>
+            <li class="disabled"><a href=""> &#8250; &#8250; </a></li>
         </ul>
+
+        <p>File d'Ariane, pour aider à la navigation dans un site, connaitre sa position :</p>
 
         <ul class = "breadcrumb">
             <li><a href="">Home breadcrumb</a></li>
@@ -266,27 +278,61 @@
 
         <hr>
 
-        <div class=""container>
+        <p>Grille de mise en page, qui permet un alignement facile d'éléments. Ci-dessous une grille de 12 et 20 colonnes :</p>
 
-            <div class = "row">
-                <div class ="col-4">col 4</div>
-                <div class ="col-8">col 8</div>
+        <div class = "container">
+            <div class = "row-12">
+                <div class = "g12-col2"> grid 12 col2</div>
+                <div class = "g12-col2"> grid 12 col2</div>
+                <div class = "g12-col2"> grid 12 col2</div>
+                <div class = "g12-col2"> grid 12 col2</div>
+                <div class = "g12-col2"> grid 12 col2</div>
+                <div class = "g12-col2"> grid 12 col2</div>
             </div>
-
-            <div class = "row">
-                <div class ="col-2">col 2</div>
-                <div class ="col-2">col 2</div>
-                <div class ="col-2">col 2</div>
-                <div class ="col-2">col 2</div>
-                <div class ="col-2">col 2</div>
-                <div class ="col-2">col 2</div>
+            <div class = "row-12">
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
+                <div class = "g12-col1"> grid 12 col1</div>
             </div>
+            <div class = "row-12">
+                <div class="g12-col1 g12-offs1"> grid 12 offs 1</div>
+                <div class="g12-col5 g12-offs4"> grid 12 offs 4</div>
 
-            <div class = "row">
-                <div class ="col-8">col 8</div>
             </div>
-
+            <div class = "row-12">
+                <div class = "g12-col6"> grid 12 col6</div>
+                <div class = "g12-col6"> grid 12 col6</div>
+            </div>
         </div>
+
+        <div class = "container">
+            <div class = "row-20">
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+                <div class = "g20-col2"> col2</div>
+            </div>
+            <div class = "row-20">
+                <div class = "g20-col10"> col10</div>
+                <div class = "g20-col10"> col10</div>
+            </div>
+        </div>
+
 
     </body>
 
